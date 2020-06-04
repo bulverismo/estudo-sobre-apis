@@ -45,9 +45,18 @@ app.get('/weather/:latlon', async (request, response) => {
     air_quality: aq_data
   }
 
-  console.log(data);
+  // console.log(data);
+  console.log("--------------------");
+  console.log("Dados de clima e qualidade do ar requisitados por ");
+  console.log("request.hostname");
+  console.log(request.hostname);
+  console.log("request.ip");
+  console.log(request.ip);
+  console.log("request.ips");
+  console.log(request.ips);
+
   response.json(data);
-  // promisse all?
+  // TODO requisitar as duas apis com promisse all
 })
 
 
@@ -55,7 +64,9 @@ app.post('/api', (request, response) => {
   const data = request.body;
   const timestamp = Date.now();
   data.timestamp = timestamp;
-  console.log(data);
+  //console.log(data);
+  console.log("--------------------");
+  console.log('Dados salvos no banco');
   database.insert(data); 
   response.json(data);
 
