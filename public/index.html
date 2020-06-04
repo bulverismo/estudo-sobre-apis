@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Css -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+    
+   <title>Data Selfie App</title>
+
+  </head>
+
+  <body class="container">
+
+    <h1>The Weather Here</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            check in 
+          </a>  
+        </li>
+        <li>
+          <a href="/checkins">
+            view checkins
+          </a>
+        </li>
+    </nav>
+
+    <p>
+    O clima nas coordenadas <span id="latitude"></span>&deg;,<span id="longitude"></span>&deg; é <span id="sumary"></span> com a temperatura <span id="temperature"></span>&deg; C. A concentração de particulas (<span id="aq_parameter"></span>) é <span id="aq_value"></span> <span id="aq_units"></span>, com a ultima leitura realizada em <span id="aq_date"></span>
+    </p>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
+
+
